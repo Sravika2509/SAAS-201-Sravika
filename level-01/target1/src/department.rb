@@ -2,7 +2,7 @@ class Department
 	attr_accessor :deptname , :sections, :studentslist
 	def initialize(name)
 		self.deptname=name
-		self.sections={'A'=>3,'B'=>3,'C'=>3}
+		self.sections={'A'=>9,'B'=>9,'C'=>9}
 		self.studentslist={}
 	end
 	def show
@@ -46,7 +46,7 @@ class Department
 	end
 
 	def get_specific_section_rollno(section)
-		sect=3-self.sections[section]+1
+		sect=9-self.sections[section]+1
 		sect=section+sect.to_s
 		self.sections[section]=self.sections[section]-1
 		return sect
@@ -54,15 +54,15 @@ class Department
 
 	def get_section
 		if self.sections['A'] >= 1
-			sect=3-self.sections["A"]+1
+			sect=9-self.sections["A"]+1
 			sect='A'+sect.to_s
 			self.sections['A']=self.sections['A']-1
 		elsif self.sections['B'] >=1
-			sect=3-self.sections["B"]+1
+			sect=9-self.sections["B"]+1
 			sect='B'+sect.to_s
 			self.sections['B']=self.sections['B']-1
 		elsif self.sections['C'] >= 1
-			sect=3-self.sections["C"]+1
+			sect=9-self.sections["C"]+1
 			sect='C'+sect.to_s
 			self.sections['C']=self.sections['C']-1			
 		else

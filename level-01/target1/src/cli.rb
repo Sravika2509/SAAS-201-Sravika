@@ -52,6 +52,8 @@ loop do
     student_name = gets.chomp
     common_question_2
     student_dept = gets.chomp
+    common_question_3
+    student_sec=gets.chomp
     puts application.enroll student_name, student_dept
   when 2
     common_question_1

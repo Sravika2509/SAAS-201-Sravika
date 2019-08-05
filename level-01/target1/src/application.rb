@@ -103,20 +103,20 @@ class Application
   end
 
   def department_view(student_dept)
-    ## write some logic to frame the string below
+   
     department = self.departments.detect { |dept| dept.get_name == student_dept}
-    #{}"List of students:" \
+   
         department.show_details
   end
 
   def section_view(student_dept, section)
-    ## write some logic to frame the string below
-    "List of students:" \
-    "\nTom - MECB01"
+   
+   puts "List of students:" 
+  puts  "you are successfully enrolled into a section"
+     
   end
 
   def student_details(student_name)
-    ## write some logic to frame the string below
-    "Tom - MECH - Section B - MECB01"
+    puts " Name      Department    Sec     Rollno  "   
   end
 end
