@@ -1,79 +1,42 @@
 <html>
 <head>
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;width:400px;margin:200px;
-        margin-left:450px;margin-top: 60px;}
-form {border: 3px solid #f1f1f1;}
-
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100px;
-}
-a{list-style-type:none;
-color:white;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-
-
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-h3
-        {
-        float:left;
-        }
-    </style>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body style="background-image:url('pic4.jpg');">
-        <h1>Request Section Change </h1>
-       <form action="" method="">
+    <body>
+        <h1>REQUEST SECTION CHANGE </h1>
+		<div class="formdiv">
+       <form >
  
 
-  <div class="container">
-    <label for="uname"><b>Roll Number</b></label>
-    <input type="text" placeholder="Enter Roll No" name="uname" required>
-
-    <label for="dep"><b>Select Section</b></label>
-    <br>
-         <select style="width:360px;height:40px" name="dep" id="Depart">
-      <option value="i" selected>A</option>
-      <option value="u" selected>B</option>
-      <option value="v" selected>C</option>
+  <div class="divg">
+    <h3><b>Roll Number:</b></h3>
+	</div>
+	<div class="divg">
+    <input type="text"placeholder="EEE01A01" name="uname" required>
+	</div>
+<div class="divg">
+    <h3> Select Section:</h3>
+	</div>
+	<div class="divg">
+    <select  class ="choose">
+      <option value="i" >A</option>
+      <option value="u" >B</option>
+      <option value="v"selected>C</option>
       
+   
     </select>
-    <br>
+	</div>
+	<div class="divan">
+	<input class="buth" type="submit" value="Request">
+	&nbsp;
+
+    <a  href="index.html">Go Back</a>
       
-    <button > <a href="index.html">Go back</a></button>
-    
-      <button type="submit" onclick="alert('You Section has been successfully Changed......')">Request</button>
-  </div>
+     </div>
 
 </form>
-    
+    </div>
 
     </body>
 </html>

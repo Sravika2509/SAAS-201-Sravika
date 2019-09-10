@@ -1,89 +1,49 @@
 <html>
 <head>
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;width:400px;margin:200px;
-        margin-left:450px;margin-top: 60px;}
-form {border: 3px solid #f1f1f1;}
-
-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100px;
-}
-a{list-style-type:none;
-color:white;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-
-
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-h3
-        {
-        float:left;
-        }
-    </style>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body style="background-image:url('pic4.jpg');">
-        <h1>Fetch Department Details </h1>
-       <form action="" method="">
+    <body>
+        <h1>FETCH DEPARTMENT DETAILS</h1>
+		<div class="formdiv">
+       <form >
  
 
-  <div class="container">
-    
-
-    <label for="dep"><b>Department</b></label>
-    <br>
-         <select style="width:360px;height:40px" name="dep" id="Depart">
-      <option value="i" selected>CSE</option>
-      <option value="u" selected>CIVIL</option>
-      <option value="v" selected>MECH</option>
-      <option value="w" selected>EEE</option>
-      <option value="i" selected>ECE</option>
+  
+<div class="divg">
+    <h3> Department:</h3>
+	</div>
+	<div class="divg">
+    <select  class ="choose">
+      <option value="i" >CSE</option>
+      <option value="u" >CIVIL</option>
+      <option value="v" >MECH</option>
+      <option value="w" selected >EEE</option>
+   
     </select>
-<label for="dep"><b>Select Section</b></label>
-    <br>
-         <select style="width:360px;height:40px" name="dep" id="Depart">
-          <option value="v" selected>Any</option>
-
+	</div>
+	<div class="divg">
+    <h3> Section:</h3>
+	</div>
+	<div class="divg">
+	<select  class ="choose">
       <option value="i" >A</option>
-      <option value="u">B</option>
+      <option value="u" >B</option>
       <option value="v">C</option>
       
+   <option value="v"selected>Any</option>
     </select>
-    <br>
-      
-    <button > <a href="view_dept_details.html">Go back</a></button>
-    
-      <button type="submit" onclick="alert('Your details are .....')">Get List</button>
-  </div>
+	</div>
+	<div class="divan">
+	<input class="buth" type="submit" value="Get List">
+	&nbsp;
+
+    <a  href="view_dept_details.html">Go Back</a>
+       
+     </div>
 
 </form>
-    
+    </div>
 
     </body>
 </html>
